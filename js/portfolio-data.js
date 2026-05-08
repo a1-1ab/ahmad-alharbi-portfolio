@@ -24,7 +24,7 @@ const PORTFOLIO_DATA = Object.freeze({
       `I've already contributed to a <strong>250K★ open-source repository</strong> on GitHub,
        implementing a recursive implication algorithm in Python. It got merged. That felt good.`,
     ],
-    email:  'your@email.com',
+    email:  'ahmadharbi0x1337@gmail.com',
     github: 'https://github.com/ahmadharbi0x1337',
   },
 
