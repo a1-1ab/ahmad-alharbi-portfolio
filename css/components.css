@@ -1,0 +1,141 @@
+/* ============================================================
+   COMPONENTS
+   Reusable, single-responsibility UI building blocks
+   ============================================================ */
+
+/* ---- Layout Shell ---- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: var(--section-padding-x);
+  padding-right: var(--section-padding-x);
+}
+
+/* ---- Section ---- */
+.section {
+  position: relative;
+  z-index: 1;
+  padding-top: var(--section-padding-y);
+  padding-bottom: var(--section-padding-y);
+}
+
+/* ---- Section Header ---- */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: 3.5rem;
+}
+
+.section-header__num {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-accent-green);
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+
+.section-header__title {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  flex-shrink: 0;
+}
+
+.section-header__line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-border-subtle);
+}
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.85rem 2rem;
+  transition: all var(--transition-base);
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: var(--color-accent-green);
+  color: var(--color-bg-base);
+  font-weight: 700;
+}
+
+.btn--primary:hover {
+  background: #fff;
+  transform: translateY(-2px);
+}
+
+.btn--outline {
+  background: transparent;
+  color: var(--color-accent-green);
+  border: 1px solid var(--color-border-default);
+}
+
+.btn--outline:hover {
+  background: rgba(57, 255, 176, 0.06);
+  border-color: var(--color-accent-green);
+}
+
+/* ---- Card ---- */
+.card {
+  background: var(--color-bg-overlay);
+  border: 1px solid var(--color-border-subtle);
+  transition: border-color var(--transition-base), transform var(--transition-base);
+}
+
+.card:hover {
+  border-color: var(--color-border-default);
+}
+
+/* ---- Mono Tag / Badge ---- */
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  color: var(--color-text-primary);
+}
+
+.tag--cyan {
+  color: var(--color-accent-cyan);
+  border-color: rgba(0, 212, 255, 0.2);
+  background: transparent;
+}
+
+/* ---- Blinking cursor ---- */
+.cursor {
+  display: inline-block;
+  width: 3px;
+  height: 0.85em;
+  background: var(--color-accent-green);
+  margin-left: 3px;
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+}
+
+/* ---- Inline label ---- */
+.label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/* ---- Divider ---- */
+.divider {
+  height: 1px;
+  background: var(--color-border-subtle);
+  border: none;
+}

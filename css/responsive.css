@@ -1,0 +1,40 @@
+/* ============================================================
+   RESPONSIVE
+   Mobile-first breakpoint overrides
+   ============================================================ */
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding-x: 1.5rem;
+    --section-padding-y: 4rem;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .about__grid,
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .hero__stats {
+    gap: var(--space-8);
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero__stats {
+    gap: var(--space-6);
+  }
+}

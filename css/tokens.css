@@ -1,0 +1,67 @@
+/* ============================================================
+   DESIGN TOKENS
+   Single source of truth for all visual variables
+   ============================================================ */
+
+:root {
+  /* Colors — Background */
+  --color-bg-base:        #0a0a0f;
+  --color-bg-elevated:    #0f0f18;
+  --color-bg-surface:     #13131e;
+  --color-bg-overlay:     #1a1a28;
+  --color-bg-overlay-2:   #1f1f30;
+
+  /* Colors — Accent */
+  --color-accent-green:   #39ffb0;
+  --color-accent-cyan:    #00d4ff;
+  --color-accent-purple:  #bf5fff;
+
+  /* Colors — Text */
+  --color-text-primary:   #e8e8f0;
+  --color-text-muted:     #7070a0;
+
+  /* Colors — Border */
+  --color-border-subtle:  rgba(100, 255, 180, 0.12);
+  --color-border-default: rgba(100, 255, 180, 0.25);
+
+  /* Typography */
+  --font-display: 'Syne', sans-serif;
+  --font-mono:    'Space Mono', monospace;
+
+  /* Font Sizes */
+  --text-xs:   0.65rem;
+  --text-sm:   0.75rem;
+  --text-base: 0.95rem;
+  --text-lg:   1.1rem;
+  --text-xl:   1.15rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  2rem;
+
+  /* Spacing */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* Layout */
+  --max-width:         1100px;
+  --nav-height:        64px;
+  --section-padding-y: 6rem;
+  --section-padding-x: 3rem;
+
+  /* Transitions */
+  --transition-fast:   0.15s ease;
+  --transition-base:   0.2s ease;
+  --transition-slow:   0.3s ease;
+
+  /* Z-index scale */
+  --z-nav:     100;
+  --z-overlay: 200;
+}

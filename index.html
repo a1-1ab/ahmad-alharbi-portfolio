@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Ahmad Alharbi — Front-End Developer</title>
+  <meta name="description" content="Ahmad Alharbi — Front-End Developer. CS50x graduate, open-source contributor, 130+ LeetCode problems solved." />
+  <meta name="author" content="Ahmad Alharbi" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Ahmad Alharbi — Front-End Developer" />
+  <meta property="og:description" content="CS50x graduate, open-source contributor, 130+ LeetCode problems solved." />
+  <meta property="og:type"        content="website" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Styles — load order matters: tokens → reset → components → sections → animations → responsive -->
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!--
+    All content is rendered by JavaScript.
+    See js/portfolio-data.js  — content / data
+        js/renderer.js        — DOM builders
+        js/main.js            — bootstrap & behaviours
+  -->
+
+  <!-- Scripts — data must load before renderer, renderer before main -->
+  <script src="js/portfolio-data.js"></script>
+  <script src="js/renderer.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
