@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://a1-1ab.github.io/ahmad-alharbi-portfolio/sitemap.xml
+Sitemap: https://ahmad-alharbi-portfolio.netlify.app/sitemap.xml
