@@ -25,7 +25,7 @@ const PORTFOLIO_DATA = Object.freeze({
        implementing a recursive implication algorithm in Python. It got merged. That felt good.`,
     ],
     email:  'ahmadharbi0x1337@gmail.com',
-    github: 'https://github.com/ahmadharbi0x1337',
+    github: 'https://github.com/a1-1ab',
   },
 
   stats: [
