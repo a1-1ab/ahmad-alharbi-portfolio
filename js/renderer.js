@@ -105,8 +105,14 @@ function buildHero(owner, stats) {
   ctaOutline.target = '_blank';
   ctaOutline.rel    = 'noopener noreferrer';
 
+  const ctaCV = createElement('a', 'btn btn--outline', 'View CV');
+  ctaCV.href   = '/resume.pdf';
+  ctaCV.target = '_blank';
+  ctaCV.rel    = 'noopener noreferrer';
+
   cta.appendChild(ctaPrimary);
   cta.appendChild(ctaOutline);
+  cta.appendChild(ctaCV);
 
   // Stats
   const statsEl = createElement('div', 'hero__stats animate-fade-up');
@@ -295,16 +301,105 @@ function buildContact(owner) {
   ghLink.rel    = 'noopener noreferrer';
   ghLink.innerHTML = `<div class="contact-link__icon">⌥</div>${owner.github.replace('https://', '')}`;
 
-  const mailLink = createElement('a', 'contact-link');
-  mailLink.href = `mailto:${owner.email}`;
-  mailLink.innerHTML = `<div class="contact-link__icon">@</div>${owner.email}`;
+  const leetcodeLink = createElement('a', 'contact-link');
+  leetcodeLink.href   = owner.leetcode;
+  leetcodeLink.target = '_blank';
+  leetcodeLink.rel    = 'noopener noreferrer';
+  leetcodeLink.innerHTML = `<div class="contact-link__icon">🏆</div>${owner.leetcode.replace('https://', '')}`;
+
+  const linkedinLink = createElement('a', 'contact-link');
+  linkedinLink.href   = owner.linkedin;
+  linkedinLink.target = '_blank';
+  linkedinLink.rel    = 'noopener noreferrer';
+  linkedinLink.innerHTML = `<div class="contact-link__icon">💼</div>${owner.linkedin.replace('https://', '')}`;
+
+  const youtubeLink = createElement('a', 'contact-link');
+  youtubeLink.href   = owner.youtube;
+  youtubeLink.target = '_blank';
+  youtubeLink.rel    = 'noopener noreferrer';
+  youtubeLink.innerHTML = `<div class="contact-link__icon">▶</div>${owner.youtube.replace('https://', '')}`;
+
+  const phoneLink = createElement('a', 'contact-link');
+  phoneLink.href = `tel:${owner.phone.replace(/[^0-9+]/g, '')}`;
+  phoneLink.innerHTML = `<div class="contact-link__icon">📞</div>${owner.phone}`;
 
   right.appendChild(ghLink);
-  right.appendChild(mailLink);
+  right.appendChild(leetcodeLink);
+  right.appendChild(linkedinLink);
+  right.appendChild(youtubeLink);
+  right.appendChild(phoneLink);
 
   grid.appendChild(left);
   grid.appendChild(right);
   container.appendChild(grid);
+  section.appendChild(container);
+  return section;
+}
+
+/**
+ * Render the contact form section.
+ * @param {object} owner
+ * @returns {HTMLElement}
+ */
+function buildContactForm(owner) {
+  const section = createElement('section', 'section contact-form');
+  section.id = 'contact-form';
+
+  const container = createElement('div', 'container');
+  container.appendChild(buildSectionHeader('05.', 'Get In Touch'));
+
+  const form = createElement('form', 'contact-form__form');
+  form.action = 'https://formspree.io/f/rorikari00x@gmail.com';
+  form.method = 'POST';
+
+  // Name input
+  const nameGroup = createElement('div', 'contact-form__group');
+  const nameLabel = createElement('label', 'contact-form__label', 'Name');
+  nameLabel.htmlFor = 'name';
+  const nameInput = createElement('input', 'contact-form__input');
+  nameInput.type = 'text';
+  nameInput.id = 'name';
+  nameInput.name = 'name';
+  nameInput.placeholder = 'Your name';
+  nameInput.required = true;
+  nameGroup.appendChild(nameLabel);
+  nameGroup.appendChild(nameInput);
+
+  // Email input
+  const emailGroup = createElement('div', 'contact-form__group');
+  const emailLabel = createElement('label', 'contact-form__label', 'Email');
+  emailLabel.htmlFor = 'email';
+  const emailInput = createElement('input', 'contact-form__input');
+  emailInput.type = 'email';
+  emailInput.id = 'email';
+  emailInput.name = 'email';
+  emailInput.placeholder = 'Your email';
+  emailInput.required = true;
+  emailGroup.appendChild(emailLabel);
+  emailGroup.appendChild(emailInput);
+
+  // Message textarea
+  const messageGroup = createElement('div', 'contact-form__group');
+  const messageLabel = createElement('label', 'contact-form__label', 'Message');
+  messageLabel.htmlFor = 'message';
+  const messageTextarea = createElement('textarea', 'contact-form__input contact-form__input--textarea');
+  messageTextarea.id = 'message';
+  messageTextarea.name = 'message';
+  messageTextarea.placeholder = 'Your message';
+  messageTextarea.required = true;
+  messageGroup.appendChild(messageLabel);
+  messageGroup.appendChild(messageTextarea);
+
+  // Submit button
+  const submitBtn = createElement('button', 'btn btn--primary', 'Send Message');
+  submitBtn.type = 'submit';
+
+  form.appendChild(nameGroup);
+  form.appendChild(emailGroup);
+  form.appendChild(messageGroup);
+  form.appendChild(submitBtn);
+
+  container.appendChild(form);
   section.appendChild(container);
   return section;
 }
