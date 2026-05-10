@@ -106,7 +106,7 @@ function buildHero(owner, stats) {
   ctaOutline.rel    = 'noopener noreferrer';
 
   const ctaCV = createElement('a', 'btn btn--outline', 'View CV');
-  ctaCV.href   = '/resume.pdf';
+  ctaCV.href   = owner.resume;
   ctaCV.target = '_blank';
   ctaCV.rel    = 'noopener noreferrer';
 
