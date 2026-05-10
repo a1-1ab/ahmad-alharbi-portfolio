@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://a1-1ab.github.io/ahmad-alharbi-portfolio/sitemap.xml
