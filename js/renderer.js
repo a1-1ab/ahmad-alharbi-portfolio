@@ -349,7 +349,7 @@ function buildContactForm(owner) {
   container.appendChild(buildSectionHeader('05.', 'Get In Touch'));
 
   const form = createElement('form', 'contact-form__form');
-  form.action = 'https://formspree.io/f/rorikari00x@gmail.com';
+  form.action = 'https://formspree.io/f/xvzlvlqd';
   form.method = 'POST';
 
   // Name input
