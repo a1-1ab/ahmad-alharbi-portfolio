@@ -1,7 +1,7 @@
 # Ahmad Alharbi — Front-End Developer Portfolio
 
 ## 🌐 Live Demo
-🔗 **[View Portfolio](https://a1-1ab.github.io/ahmad-alharbi-portfolio/)**
+🔗 **[View Portfolio](https://ahmad-alharbi-portfolio.netlify.app/)**
 
 ---
 
@@ -22,7 +22,7 @@ This is my personal portfolio website, built to showcase my skills, projects, an
 - **CSS3** (Custom properties, Flexbox, Grid)
 - **Vanilla JavaScript** (ES6+)
 - **Git & GitHub** for version control
-- **GitHub Pages** for hosting
+- **Netlify** for hosting
 
 ---
 
@@ -78,7 +78,7 @@ To customize the content of the portfolio:
 
 - **Email:** [ahmadharbi0x1337@gmail.com](mailto:ahmadharbi0x1337@gmail.com)
 - **GitHub:** [https://github.com/a1-1ab](https://github.com/a1-1ab)
-- **Portfolio:** [https://a1-1ab.github.io/ahmad-alharbi-portfolio/](https://a1-1ab.github.io/ahmad-alharbi-portfolio/)
+- **Portfolio:** [https://ahmad-alharbi-portfolio.netlify.app/](https://ahmad-alharbi-portfolio.netlify.app/)
 
 ---
 
