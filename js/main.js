@@ -20,6 +20,7 @@ function mountApp() {
     buildSkills(skillCategories),
     buildProjects(highlight, projects),
     buildContact(owner),
+    buildContactForm(owner),
     buildFooter(owner),
   ];
 
