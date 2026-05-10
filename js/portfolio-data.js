@@ -26,6 +26,10 @@ const PORTFOLIO_DATA = Object.freeze({
     ],
     email:  'ahmadharbi0x1337@gmail.com',
     github: 'https://github.com/a1-1ab',
+    leetcode: 'https://leetcode.com/u/ahmadharbi0x1337/',
+    linkedin: 'https://www.linkedin.com/in/ahmad-alharbi-0010502b0/',
+    youtube: 'https://www.youtube.com/@Ahmad0x1337',
+    phone: '+963 996 579 493',
   },
 
   stats: [
@@ -89,7 +93,7 @@ const PORTFOLIO_DATA = Object.freeze({
       title:       'LeetCode Grind',
       description: '130+ problems solved across arrays, strings, trees, dynamic programming, and more. Consistent daily practice sharpening algorithmic thinking.',
       tags:        ['Python', 'Algorithms', 'DSA'],
-      link:        { label: 'View Profile', href: 'https://leetcode.com' },
+      link:        { label: 'View Profile', href: 'https://leetcode.com/u/ahmadharbi0x1337/' },
     },
     {
       num:         '02',
