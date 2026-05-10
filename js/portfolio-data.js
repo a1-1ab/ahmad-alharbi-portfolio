@@ -13,7 +13,7 @@ const PORTFOLIO_DATA = Object.freeze({
     role:      'Front-End Developer',
     tagline:   'Front-End Developer & CS Student',
     bio: [
-      `Hey — I'm Ahmad, a <strong>front-end developer</strong> based in Saudi Arabia
+      `Hey — I'm Ahmad, a <strong>full-stack developer</strong> based in Syria
        with a passion for writing clean code and building things that live on the internet.`,
       `My journey started with CS50x, Harvard's legendary intro to computer science,
        which gave me a solid foundation across C, Python, algorithms, and web development.
@@ -22,14 +22,15 @@ const PORTFOLIO_DATA = Object.freeze({
        and sharpening my problem-solving skills daily on LeetCode.
        I believe in learning by doing — and shipping.`,
       `I've already contributed to a <strong>250K★ open-source repository</strong> on GitHub,
-       implementing a recursive implication algorithm in Python. It got merged. That felt good.`,
+       implementing a recursive implication algorithm in Python.`,
     ],
     email:  'ahmadharbi0x1337@gmail.com',
-    github: 'https://github.com/a1-1ab',
+    github: 'https://github.com/ahmadharbi0x1337',
     leetcode: 'https://leetcode.com/u/ahmadharbi0x1337/',
     linkedin: 'https://www.linkedin.com/in/ahmad-alharbi-0010502b0/',
     youtube: 'https://www.youtube.com/@Ahmad0x1337',
     phone: '+963 996 579 493',
+    resume: null,
   },
 
   stats: [
