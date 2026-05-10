@@ -9,11 +9,32 @@
   <meta name="description" content="Ahmad Alharbi — Front-End Developer. CS50x graduate, open-source contributor, 130+ LeetCode problems solved." />
   <meta name="author" content="Ahmad Alharbi" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://a1-1ab.github.io/ahmad-alharbi-portfolio/" />
 
   <!-- Open Graph -->
-  <meta property="og:title"       content="Ahmad Alharbi — Front-End Developer" />
+  <meta property="og:title" content="Ahmad Alharbi — Front-End Developer" />
   <meta property="og:description" content="CS50x graduate, open-source contributor, 130+ LeetCode problems solved." />
-  <meta property="og:type"        content="website" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://a1-1ab.github.io/ahmad-alharbi-portfolio/" />
+  <meta property="og:image" content="https://a1-1ab.github.io/ahmad-alharbi-portfolio/og-image.png" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ahmad Alharbi",
+      "url": "https://a1-1ab.github.io/ahmad-alharbi-portfolio/",
+      "description": "Front-End Developer & CS Student",
+      "email": "ahmadharbi0x1337@gmail.com",
+      "sameAs": [
+        "https://github.com/a1-1ab",
+        "https://leetcode.com/u/ahmadharbi0x1337/",
+        "https://www.linkedin.com/in/ahmad-alharbi-0010502b0/",
+        "https://www.youtube.com/@Ahmad0x1337"
+      ]
+    }
+  </script>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +44,7 @@
     rel="stylesheet"
   />
 
-  <!-- Styles — load order matters: tokens → reset → components → sections → animations → responsive -->
+  <!-- Styles -->
   <link rel="stylesheet" href="css/tokens.css" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/components.css" />
@@ -33,14 +54,7 @@
 </head>
 <body>
 
-  <!--
-    All content is rendered by JavaScript.
-    See js/portfolio-data.js  — content / data
-        js/renderer.js        — DOM builders
-        js/main.js            — bootstrap & behaviours
-  -->
-
-  <!-- Scripts — data must load before renderer, renderer before main -->
+  <!-- Content rendered by JavaScript -->
   <script src="js/portfolio-data.js"></script>
   <script src="js/renderer.js"></script>
   <script src="js/main.js"></script>
